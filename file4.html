@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Random Color Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+      transition: background 0.5s;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h2>Click to Change Background 🎨</h2>
+  <button onclick="changeColor()">Change Color</button>
+  <script>
+    function changeColor() {
+      const color = '#' + Math.floor(Math.random()*16777215).toString(16);
+      document.body.style.background = color;
+    }
+  </script>
+</body>
+</html>
